@@ -30,6 +30,7 @@ namespace InventoryManagement
             PurchaseList purchaseList = new PurchaseList();
             purchaseList.Show();
             purchaseList.Focus();
+            MessageBox.Show("hello world!");
         }
 
         private void MenuItemSales_Click(object sender, RoutedEventArgs e)
