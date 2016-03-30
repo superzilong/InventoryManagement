@@ -1,0 +1,46 @@
+﻿<Window x:Class="InventoryManagement.PurchaseList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagement"
+        mc:Ignorable="d"
+        Title="PurchaseList" Height="600" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="61,103,0,0" TextWrapping="Wrap" Text="单号:" VerticalAlignment="Top" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,103,0,0" TextWrapping="Wrap" Text="CG0000000" VerticalAlignment="Top" Width="158" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,135,0,0" TextWrapping="Wrap" Text="采购员:" VerticalAlignment="Top" Height="17"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,138,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="17"/>
+        <TextBlock HorizontalAlignment="Left" Margin="321,138,0,0" TextWrapping="Wrap" Text="采购日期:" VerticalAlignment="Top" Height="17"/>
+        <TextBlock HorizontalAlignment="Left" Margin="392,138,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="17"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,177,0,0" TextWrapping="Wrap" Text="供应商:" VerticalAlignment="Top" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="321,174,0,0" TextWrapping="Wrap" Text="收货仓库:" VerticalAlignment="Top" Height="17"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="111,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="377,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ListView HorizontalAlignment="Left" Height="237" Margin="61,221,0,0" VerticalAlignment="Top" Width="551">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="商品" Width="150"/>
+                    <GridViewColumn Header="规格" Width="100"/>
+                    <GridViewColumn Header="单位" Width="50"/>
+                    <GridViewColumn Header="数量" Width="50"/>
+                    <GridViewColumn Header="金额" Width="50"/>
+                    <GridViewColumn Header="备注" Width="50"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="发送" HorizontalAlignment="Left" Margin="61,45,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="保存" HorizontalAlignment="Left" Margin="192,45,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="打印" HorizontalAlignment="Left" Margin="321,45,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,473,0,0" TextWrapping="Wrap" Text="说明:" VerticalAlignment="Top"/>
+        <RichTextBox HorizontalAlignment="Left" Height="44" Margin="64,494,0,0" VerticalAlignment="Top" Width="548">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <DataGrid HorizontalAlignment="Left" Height="100" Margin="231,655,0,-185" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
